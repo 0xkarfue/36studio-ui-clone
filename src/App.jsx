@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Circ, Expo } from "gsap/all";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(false);
@@ -65,6 +66,7 @@ function App() {
 
   return (
     <>
+    <CustomCursor/>
       <span
         ref={growingSpan}
         className="growing rounded-full block fixed top-[-20px] left-[-20px] w-5 h-5"
